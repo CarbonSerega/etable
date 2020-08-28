@@ -1,2 +1,2 @@
 # etable
-Etable - test learn SPA written on pure JavaScript
+Etable - an educational SPA project written on pure JavaScript
