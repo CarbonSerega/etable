@@ -1,0 +1,77 @@
+@import "vars"
+@import "mixins"
+
+.dash-board
+
+  & .header
+    position: sticky
+    left: 0
+    right: 0
+    top: 0
+    padding: .5rem .25rem
+    display: flex
+    align-items: center
+    justify-content: center
+    background: white
+    z-index: 1000
+    color: $border-color
+
+  & .new
+    padding: 1.5rem
+    background: $light-accent-color
+
+  & .view
+    max-width: 1000px
+    margin: 0 auto
+
+  & .create
+    width: 200px
+    height: 160px
+    background: white
+    border-radius: 6px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    font-size: 1.5rem
+    text-align: center
+    color: $border-color
+    transition: .3s
+
+    &:hover
+        cursor: pointer
+        color: $primary-color
+        transform: scale(1.1, 1.1)
+        transition: .3s
+
+  & .list
+    padding: 1rem
+
+    & .header
+      display: flex
+      justify-content: space-between
+      text-align: center
+
+    & .lst
+      @include clear-list
+
+      & .rec
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: .6rem .5rem
+        margin-bottom: 10px
+
+        &:hover
+          background: $primary-light-color
+          border-radius: 25px
+
+        a
+          text-decoration: none
+          cursor: pointer
+          color: $primary-color
+
+        a:hover
+          text-decoration: underline
+
+
