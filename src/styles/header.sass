@@ -1,0 +1,32 @@
+@import "vars"
+@import "mixins"
+
+.etable__header
+  position: sticky
+  top: 0
+  right: 0
+  left: 0
+  padding: .5rem .25rem
+  display: flex
+  justify-content: space-between
+
+  & .input
+    margin: 0
+    padding: .45rem .45rem
+    color: $border-color
+    border: 2px solid transparent
+    border-bottom: 2px solid #e3e3e3
+    border-radius: 2px
+    font-size: 18px
+    line-height: 20px
+    outline: none
+
+    &:hover
+      border: 2px solid $border-color
+
+    &:focus
+      border: 2px solid $primary-color
+
+  & .button
+    @include button($primary-color)
+
